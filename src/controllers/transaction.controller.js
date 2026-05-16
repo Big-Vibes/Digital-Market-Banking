@@ -4,7 +4,7 @@ import {
   getTransactionStatus,
 } from "../services/transaction.service.js";
 
-export const transferFundsController =
+export const transferController =
   async (req, res) => {
     try {
       const transaction =
@@ -16,7 +16,7 @@ export const transferFundsController =
       return res.status(200).json({
         success: true,
         message:
-          "Transfer completed successfully",
+          "Transfer successful",
         data: transaction,
       });
     } catch (error) {
@@ -27,7 +27,7 @@ export const transferFundsController =
     }
   };
 
-export const getTransactionHistoryController =
+export const transactionHistoryController =
   async (req, res) => {
     try {
       const transactions =
@@ -40,14 +40,14 @@ export const getTransactionHistoryController =
         data: transactions,
       });
     } catch (error) {
-      return res.status(404).json({
+      return res.status(400).json({
         success: false,
         message: error.message,
       });
     }
   };
 
-export const getTransactionStatusController =
+export const transactionStatusController =
   async (req, res) => {
     try {
       const transaction =

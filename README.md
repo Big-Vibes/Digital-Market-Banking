@@ -21,7 +21,6 @@ Instead of being a single CRUD endpoint, this codebase shows a realistic banking
 4. The user can check account details, run name enquiry, and transfer funds.
 5. Each transfer is recorded with a unique reference and transaction status.
 
-It is a good portfolio project for backend engineering, fintech product engineering, or API design discussions.
 
 ## Tech Stack
 
